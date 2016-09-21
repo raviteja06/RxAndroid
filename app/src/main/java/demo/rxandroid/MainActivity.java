@@ -8,6 +8,10 @@ import android.view.View;
 
 import demo.rxandroid.databinding.ActivityMainBinding;
 
+import demo.rxandroid.databinding.ActivityMainBinding;
+import rx.observers.Observers;
+import rx.subjects.PublishSubject;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
