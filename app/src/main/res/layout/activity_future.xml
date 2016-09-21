@@ -1,0 +1,32 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/getData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/factorial_for_random_number"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/dataAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data_available"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="100"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+</layout>

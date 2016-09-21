@@ -22,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
         public void onClickObserverPattern(View v) {
             startActivity(new Intent(MainActivity.this, ObserverPatternActivity.class));
         }
+
+        @Override
+        public void onClickFuture(View v) {
+            startActivity(new Intent(MainActivity.this, FutureActivity.class));
+        }
     };
 }

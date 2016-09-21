@@ -13,4 +13,8 @@
     <string name="un_subscribe_2">Un-Subscribe 2</string>
     <string name="un_subscribe_3">Un-Subscribe 3</string>
     <string name="un_subscribed">Un-Subscribed</string>
+    <string name="title_activity_future">FutureActivity</string>
+    <string name="future_and_op">Future and OP</string>
+    <string name="factorial_for_random_number">Factorial for Random number</string>
+    <string name="data_available">Data Available</string>
 </resources>

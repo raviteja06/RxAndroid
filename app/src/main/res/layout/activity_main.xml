@@ -21,5 +21,11 @@
             android:layout_height="wrap_content"
             android:onClick="@{onClickButtons::onClickObserverPattern}"
             android:text="@string/observer_pattern_example" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{onClickButtons::onClickFuture}"
+            android:text="@string/future_and_op" />
     </LinearLayout>
 </layout>

@@ -8,4 +8,5 @@ import android.view.View;
 
 public interface OnClickButtons {
     void onClickObserverPattern(View v);
+    void onClickFuture(View v);
 }
