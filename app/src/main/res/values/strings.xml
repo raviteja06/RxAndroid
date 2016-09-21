@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">RxAndroid</string>
+    <string name="observer_pattern_example">Observer Pattern Example</string>
+    <string name="title_activity_observer_pattern">ObserverPatternActivity</string>
+    <string name="subscribe_1">Subscribe 1</string>
+    <string name="subscribe_2">Subscribe 2</string>
+    <string name="subscribe_3">Subscribe 3</string>
+    <string name="subscribe_all">Subscribe All</string>
+    <string name="un_subscribe_all">Un-subscribe All</string>
+    <string name="send_random_data">Send Random data</string>
+    <string name="subscribed">Subscribed</string>
+    <string name="un_subscribe_1">Un-Subscribe 1</string>
+    <string name="un_subscribe_2">Un-Subscribe 2</string>
+    <string name="un_subscribe_3">Un-Subscribe 3</string>
+    <string name="un_subscribed">Un-Subscribed</string>
 </resources>
