@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">RxAndroid</string>
     <string name="observer_pattern_example">Observer Pattern Example</string>
-    <string name="title_activity_observer_pattern">ObserverPatternActivity</string>
+    <string name="title_activity_observer_pattern">Observer Pattern Activity</string>
     <string name="subscribe_1">Subscribe 1</string>
     <string name="subscribe_2">Subscribe 2</string>
     <string name="subscribe_3">Subscribe 3</string>
@@ -13,8 +13,10 @@
     <string name="un_subscribe_2">Un-Subscribe 2</string>
     <string name="un_subscribe_3">Un-Subscribe 3</string>
     <string name="un_subscribed">Un-Subscribed</string>
-    <string name="title_activity_future">FutureActivity</string>
+    <string name="title_activity_future">Future Activity</string>
     <string name="future_and_op">Future and OP</string>
     <string name="factorial_for_random_number">Factorial for Random number</string>
     <string name="data_available">Data Available</string>
+    <string name="title_activity_fun_starts_here">Fun Starts Here</string>
+    <string name="rx">RX</string>
 </resources>

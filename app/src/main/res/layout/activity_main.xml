@@ -27,5 +27,11 @@
             android:layout_height="wrap_content"
             android:onClick="@{onClickButtons::onClickFuture}"
             android:text="@string/future_and_op" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{onClickButtons::onClickNext}"
+            android:text="@string/rx" />
     </LinearLayout>
 </layout>

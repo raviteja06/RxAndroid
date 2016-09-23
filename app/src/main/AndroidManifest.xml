@@ -33,6 +33,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="demo.rxandroid.MainActivity" />
         </activity>
+        <activity
+            android:name=".FunStartsHereActivity"
+            android:label="@string/title_activity_fun_starts_here"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="demo.rxandroid.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
