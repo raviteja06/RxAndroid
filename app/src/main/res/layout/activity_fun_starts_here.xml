@@ -2,6 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
+        <variable
+            name="clickEvents"
+            type="demo.rxandroid.FunStartsHereActivity.ClickEvents" />
     </data>
 
     <LinearLayout
@@ -9,9 +13,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp"
-        tools:context="demo.rxandroid.MainActivity">
+        android:padding="10dp">
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickEvents::onClick1}"
+            android:text="@string/subscribe_on" />
 
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="@{onClickButtons::onClickFuture}"-->
+            <!--android:text="@string/future_and_op" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="@{onClickButtons::onClickNext}"-->
+            <!--android:text="@string/rx" />-->
     </LinearLayout>
 </layout>

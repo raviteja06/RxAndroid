@@ -19,4 +19,16 @@
     <string name="data_available">Data Available</string>
     <string name="title_activity_fun_starts_here">Fun Starts Here</string>
     <string name="rx">RX</string>
+    <string name="title_activity_rx_example1">RxExample1Activity</string>
+    <string name="subscribe_on">Subscribe on</string>
+    <string name="clear">Clear</string>
+    <string name="run_on_main">Run On Main</string>
+    <string name="run_on_new">Run on new</string>
+    <string name="run_on_cmpt">Run On Cmpt</string>
+    <string name="run_on_es">Run on ES</string>
+    <string name="start_of_block">Start of Block</string>
+    <string name="end_of_block">End of Block</string>
+    <string name="done">Done</string>
+    <string name="error">Error</string>
+    <string name="run_on_imm">Run on Imm</string>
 </resources>
