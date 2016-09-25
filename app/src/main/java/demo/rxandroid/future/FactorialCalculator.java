@@ -2,7 +2,6 @@ package demo.rxandroid.future;
 
 import junit.framework.Test;
 
-import java.util.Arrays;
 import java.util.Locale;
 import java.util.Random;
 import java.util.concurrent.Callable;

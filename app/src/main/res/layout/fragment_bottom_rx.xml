@@ -1,0 +1,31 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="myText"
+            type="String" />
+
+        <variable
+            name="myObject"
+            type="demo.rxandroid.rxbus_fragments.TopRxFragment.MyObject" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="demo.rxandroid.rxbus_fragments.BottomRxFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{myText}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{@string/result + " : " + myObject.getString()}' />
+    </LinearLayout>
+</layout>

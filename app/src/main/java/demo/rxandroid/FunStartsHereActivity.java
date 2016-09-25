@@ -24,61 +24,27 @@ public class FunStartsHereActivity extends AppCompatActivity {
     }
 
     private void init() {
-//
-//        Observable
-//                .from(Executors.newFixedThreadPool(1).submit(new FactorialCalculator()))
-//                .subscribeOn(Schedulers.newThread())
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe(new Subscriber<String>() {
-//                    @Override
-//                    public void onCompleted() {
-//                        System.out.println("Done");
-//                    }
-//
-//                    @Override
-//                    public void onError(Throwable e) {
-//
-//                        System.out.println("Error");
-//                    }
-//
-//                    @Override
-//                    public void onNext(String s) {
-//
-//                        System.out.println(s);
-//                    }
-//                });
-//
-//        for (int i = 0; i < 100; i++) {
-//            Observable
-//                    .from(Executors.newFixedThreadPool(1).submit(new FactorialCalculator()))
-//                    .subscribeOn(Schedulers.computation())
-//                    .observeOn(AndroidSchedulers.mainThread())
-//                    .subscribe(System.out::println);
-//        }
-//
-//        ExecutorService executorService = Executors.newFixedThreadPool(3);
-//        for (int i = 0; i < 100; i++) {
-//            Observable
-//                    .from(executorService.submit(new FactorialCalculator()))
-//                    .subscribeOn(Schedulers.computation())
-//                    .observeOn(AndroidSchedulers.mainThread())
-//                    .subscribe(System.out::println);
-//        }
+
     }
 
     ClickEvents clickEvents = new ClickEvents() {
         @Override
         public void onClick1(View v) {
-            startActivity(new Intent(FunStartsHereActivity.this, RxExample1Activity.class));
+            startActivity(new Intent(FunStartsHereActivity.this, demo.rxandroid.SubscribeOnActivity.class));
         }
 
         @Override
         public void onClick2(View v) {
-
+            startActivity(new Intent(FunStartsHereActivity.this, RxBusActivity.class));
         }
 
         @Override
         public void onClick3(View v) {
+            startActivity(new Intent(FunStartsHereActivity.this, BindingActivity.class));
+        }
+
+        @Override
+        public void onClick4(View v) {
 
         }
     };
@@ -87,5 +53,6 @@ public class FunStartsHereActivity extends AppCompatActivity {
         void onClick1(View v);
         void onClick2(View v);
         void onClick3(View v);
+        void onClick4(View v);
     }
 }

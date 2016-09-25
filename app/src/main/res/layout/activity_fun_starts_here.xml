@@ -21,16 +21,16 @@
             android:onClick="@{clickEvents::onClick1}"
             android:text="@string/subscribe_on" />
 
-        <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="@{onClickButtons::onClickFuture}"-->
-            <!--android:text="@string/future_and_op" />-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickEvents::onClick2}"
+            android:text="@string/rxbus" />
 
-        <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="@{onClickButtons::onClickNext}"-->
-            <!--android:text="@string/rx" />-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickEvents::onClick3}"
+            android:text="@string/binding" />
     </LinearLayout>
 </layout>

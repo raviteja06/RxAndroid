@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="demo.rxandroid">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="demo.rxandroid"
+    tools:ignore="MissingLeanbackLauncher,MissingLeanbackSupport">
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -43,8 +46,26 @@
                 android:value="demo.rxandroid.MainActivity" />
         </activity>
         <activity
-            android:name=".RxExample1Activity"
+            android:name=".SubscribeOnActivity"
             android:label="@string/title_activity_rx_example1"
+            android:parentActivityName=".FunStartsHereActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="demo.rxandroid.FunStartsHereActivity" />
+        </activity>
+        <activity
+            android:name=".RxBusActivity"
+            android:label="@string/title_activity_rx_bus"
+            android:parentActivityName=".FunStartsHereActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="demo.rxandroid.FunStartsHereActivity" />
+        </activity>
+        <activity
+            android:name=".BindingActivity"
+            android:label="@string/title_activity_binding"
             android:parentActivityName=".FunStartsHereActivity"
             android:theme="@style/AppTheme">
             <meta-data

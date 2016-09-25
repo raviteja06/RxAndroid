@@ -19,7 +19,7 @@
     <string name="data_available">Data Available</string>
     <string name="title_activity_fun_starts_here">Fun Starts Here</string>
     <string name="rx">RX</string>
-    <string name="title_activity_rx_example1">RxExample1Activity</string>
+    <string name="title_activity_rx_example1">SubscribeOn Activity</string>
     <string name="subscribe_on">Subscribe on</string>
     <string name="clear">Clear</string>
     <string name="run_on_main">Run On Main</string>
@@ -31,4 +31,16 @@
     <string name="done">Done</string>
     <string name="error">Error</string>
     <string name="run_on_imm">Run on Imm</string>
+    <string name="rxbus">RxBus</string>
+    <string name="title_activity_rx_bus">RxBusActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_text">Send text</string>
+    <string name="send_object">Send Object</string>
+    <string name="result">Result</string>
+    <string name="title_activity_binding">BindingActivity</string>
+    <string name="binding">Binding</string>
+    <string name="greet_user">Greet User</string>
+    <string name="enterFirstLast">Enter First name and Last name</string>
 </resources>
