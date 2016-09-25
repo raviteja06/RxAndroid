@@ -9,8 +9,10 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 
 import demo.rxandroid.databinding.ActivityBindingBinding;
+import rx.AsyncEmitter;
 import rx.Observable;
 import rx.Subscriber;
+import rx.functions.Action1;
 import rx.subscriptions.Subscriptions;
 
 public class BindingActivity extends AppCompatActivity {
@@ -34,7 +36,6 @@ public class BindingActivity extends AppCompatActivity {
         public ObservableBoolean helloButtonEnabled = new ObservableBoolean(false);
 
         MainViewModel() {
-
 //            Observable.combineLatest(toObservable(firstName), toObservable(lastName), new Func2<String, String, Boolean>() {
 //                @Override
 //                public Boolean call(String firstName, String lastName) {
