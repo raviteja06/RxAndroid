@@ -45,7 +45,7 @@ public class FunStartsHereActivity extends AppCompatActivity {
 
         @Override
         public void onClick4(View v) {
-
+            startActivity(new Intent(FunStartsHereActivity.this, RxExampleActivity.class));
         }
     };
 

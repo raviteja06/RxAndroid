@@ -72,6 +72,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="demo.rxandroid.FunStartsHereActivity" />
         </activity>
+        <activity
+            android:name=".RxExampleActivity"
+            android:label="@string/title_activity_rx_example"
+            android:parentActivityName=".FunStartsHereActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="demo.rxandroid.FunStartsHereActivity" />
+        </activity>
     </application>
 
 </manifest>

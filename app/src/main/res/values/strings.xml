@@ -43,4 +43,6 @@
     <string name="binding">Binding</string>
     <string name="greet_user">Greet User</string>
     <string name="enterFirstLast">Enter First name and Last name</string>
+    <string name="title_activity_rx_example">RxExampleActivity</string>
+    <string name="examples">Examples</string>
 </resources>
