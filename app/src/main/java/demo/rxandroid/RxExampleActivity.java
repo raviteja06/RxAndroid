@@ -53,7 +53,7 @@ public class RxExampleActivity extends AppCompatActivity {
         });
         activityRxExampleBinding.timer.setOnClickListener(v -> {
             activityRxExampleBinding.result.setText("");
-            timmer();
+            timer();
         });
         activityRxExampleBinding.clear.setOnClickListener(v -> activityRxExampleBinding.result.setText(""));
     }
@@ -69,11 +69,12 @@ public class RxExampleActivity extends AppCompatActivity {
                 .subscribe(result -> activityRxExampleBinding.result.append(result + "\n"));
     }
 
-    private void timmer() {
+    private void timer() {
         Observable.interval(1, TimeUnit.SECONDS)
                 .flatMap(Observable::just)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(result -> activityRxExampleBinding.result.append("Current Time : " + time() + "\n"));
+//        repeatWhen()
     }
 
     private String time() {

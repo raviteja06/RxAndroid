@@ -47,6 +47,11 @@ public class FunStartsHereActivity extends AppCompatActivity {
         public void onClick4(View v) {
             startActivity(new Intent(FunStartsHereActivity.this, RxExampleActivity.class));
         }
+
+        @Override
+        public void onClick5(View v) {
+            startActivity(new Intent(FunStartsHereActivity.this, RetrofitActivity.class));
+        }
     };
 
     public interface ClickEvents{
@@ -54,5 +59,6 @@ public class FunStartsHereActivity extends AppCompatActivity {
         void onClick2(View v);
         void onClick3(View v);
         void onClick4(View v);
+        void onClick5(View v);
     }
 }

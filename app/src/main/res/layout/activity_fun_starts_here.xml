@@ -36,6 +36,12 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{clickEvents::onClick5}"
+            android:text="@string/retrofit" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="@{clickEvents::onClick4}"
             android:text="@string/examples" />
     </LinearLayout>

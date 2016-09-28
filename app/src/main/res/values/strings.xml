@@ -50,4 +50,6 @@
     <string name="run_on_delay">Run on Delay</string>
     <string name="zip_with">Zip With</string>
     <string name="timer">Timer</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="title_activity_retrofit">RetrofitActivity</string>
 </resources>

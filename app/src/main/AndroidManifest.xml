@@ -4,6 +4,8 @@
     package="demo.rxandroid"
     tools:ignore="MissingLeanbackLauncher,MissingLeanbackSupport">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
@@ -77,6 +79,15 @@
             android:label="@string/title_activity_rx_example"
             android:parentActivityName=".FunStartsHereActivity"
             android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="demo.rxandroid.FunStartsHereActivity" />
+        </activity>
+        <activity
+            android:name=".RetrofitActivity"
+            android:label="@string/title_activity_retrofit"
+            android:parentActivityName=".FunStartsHereActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="demo.rxandroid.FunStartsHereActivity" />
