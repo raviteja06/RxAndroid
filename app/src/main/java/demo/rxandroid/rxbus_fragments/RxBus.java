@@ -1,5 +1,7 @@
 package demo.rxandroid.rxbus_fragments;
 
+import java.util.List;
+
 import rx.Observable;
 import rx.subjects.PublishSubject;
 

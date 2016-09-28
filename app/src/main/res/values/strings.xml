@@ -45,4 +45,9 @@
     <string name="enterFirstLast">Enter First name and Last name</string>
     <string name="title_activity_rx_example">RxExampleActivity</string>
     <string name="examples">Examples</string>
+    <string name="merge">Merge</string>
+    <string name="retry_with_delay">Retry With Delay</string>
+    <string name="run_on_delay">Run on Delay</string>
+    <string name="zip_with">Zip With</string>
+    <string name="timer">Timer</string>
 </resources>

@@ -1,10 +1,83 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/merge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/merge"
+                tools:ignore="ButtonStyle" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/retryWithDelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retry_with_delay"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/runOnDelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/run_on_delay"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zip_with"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timer"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="100"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear" />
 
     </LinearLayout>
 </layout>

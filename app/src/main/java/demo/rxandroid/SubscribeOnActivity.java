@@ -12,6 +12,7 @@ import demo.rxandroid.databinding.ActivitySubscribeOnBinding;
 import demo.rxandroid.future.FactorialCalculator;
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 public class SubscribeOnActivity extends AppCompatActivity {
@@ -78,6 +79,18 @@ public class SubscribeOnActivity extends AppCompatActivity {
                 .subscribeOn(Schedulers.computation())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(i -> activitySubscribeOnBinding.result.append("Received " + i + "\n"));
+//        Observable.range(1, 20)
+//                .map(new Func1<Integer, Integer>() {
+//                    @Override
+//                    public Integer call(Integer i) {
+//                        return i * 100;
+//                    }
+//                })
+//                .doOnNext(i -> runOnUiThread(() -> activitySubscribeOnBinding.result.append("Emitting " + i + "\n")))
+//                .map(i -> i * 10)
+//                .subscribeOn(Schedulers.computation())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribe(i -> activitySubscribeOnBinding.result.append("Received " + i + "\n"));
         activitySubscribeOnBinding.result.append(getString(R.string.end_of_block) + "\n");
     }
 

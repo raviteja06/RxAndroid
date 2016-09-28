@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 
+import java.util.concurrent.TimeUnit;
+
 import demo.rxandroid.databinding.ActivityBindingBinding;
 import rx.AsyncEmitter;
 import rx.Observable;
@@ -72,7 +74,8 @@ public class BindingActivity extends AppCompatActivity {
         }
 
         public void buttonClicked() {
-            helloText.set(String.format("Hello %s %s !", firstName.get(), lastName.get()));
+            if (isNotNullOrEmpty(firstName.get()) && isNotNullOrEmpty(lastName.get()))
+                helloText.set(String.format("Hello %s %s !", firstName.get(), lastName.get()));
         }
     }
 
@@ -94,7 +97,7 @@ public class BindingActivity extends AppCompatActivity {
                 // when subscribe is un subscribed the observableField will make sure to remove call back
                 subscriber.add(Subscriptions.create(() -> observableField.removeOnPropertyChangedCallback(callback)));
             }
-        });
+        }).debounce(1, TimeUnit.SECONDS);
     }
 
     public static boolean isNotNullOrEmpty(String string) {
