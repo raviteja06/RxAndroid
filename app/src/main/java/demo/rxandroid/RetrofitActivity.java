@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 
 import java.util.List;
 import java.util.Locale;
@@ -32,7 +33,6 @@ public class RetrofitActivity extends AppCompatActivity {
     private GithubApi _githubService;
     private CompositeSubscription _subscriptions;
 //    RxCache rxCache;
-    GithubModel githubModel;
 
     @Override
     protected void onDestroy() {
@@ -44,8 +44,7 @@ public class RetrofitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityRetrofitBinding = DataBindingUtil.setContentView(this, R.layout.activity_retrofit);
-        githubModel = new GithubModel();
-        activityRetrofitBinding.setGithubModel(githubModel);
+        activityRetrofitBinding.setGithubModel(new GithubModel());
         activityRetrofitBinding.getContributors.setEnabled(false);
         activityRetrofitBinding.getContributorsAndUsers.setEnabled(false);
 
@@ -63,6 +62,7 @@ public class RetrofitActivity extends AppCompatActivity {
     }
 
     private void init() {
+        activityRetrofitBinding.result.setMovementMethod(new ScrollingMovementMethod());
         activityRetrofitBinding.getContributors.setOnClickListener(v -> {
             activityRetrofitBinding.result.setText("");
             callCont();

@@ -3,6 +3,7 @@ package demo.rxandroid;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -35,6 +36,7 @@ public class RxExampleActivity extends AppCompatActivity {
     }
 
     private void init() {
+        activityRxExampleBinding.result.setMovementMethod(new ScrollingMovementMethod());
         activityRxExampleBinding.merge.setOnClickListener(v -> {
             activityRxExampleBinding.result.setText("");
             mergingAsync();
